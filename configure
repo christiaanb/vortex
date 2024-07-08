@@ -35,6 +35,7 @@ detect_osversion() {
                     # Add new versions as needed
                 esac
                 ;;
+            opensuse-tumbleweed) osversion="opensuse/tumbleweed";;
         esac
     fi
     echo "$osversion"
