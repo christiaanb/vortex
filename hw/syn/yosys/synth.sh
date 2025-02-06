@@ -128,6 +128,9 @@ done
     # elaborate
     if echo "$process" | grep -q "elaborate"; then
         echo "hierarchy -top $top_level"
+        echo "proc; opt"
+        echo "techmap; opt"
+        echo "stat -json"
     fi
 
     # synthesize design
